@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section  BodyPart{
+
+<div class="loginform">
+    <form action="~/login/index" method="post">
+
+
+
+        ወደ አካውንቶ ለመግባት<hr />
+        <br />
+        <label>ስም:</label>
+        <input id="Username" name="Username" type="text" />
+        <br />
+        <br />
+        <label> ሚስጥር ቁጥር:  </label>
+        <input id="Password" name="Password" type="password" />
+        <br />
+        <input id="log" value="መግቢያ" type="submit" />
+        <br />
+        <div>
+            @Html.ValidationSummary()
+        </div>
+
+    </form>
+</div>
+    }

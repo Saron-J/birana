@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section initalCSS{
+    <link type="text/css" rel="stylesheet" href="~/Contents/css/Signup.css" />
+}
+
+@section BodyPart{
+
+
+    <form action="@Url.Action("signup","login")" method="post">
+        <div id="signupform">
+            <fieldset class="fset">
+                <p> Sign-Up Here!!!</p><hr />
+                <div class="one">
+
+                    <p>
+                        <label for="FirstName">First Name :</label>
+                        <input id="FirstName" Name="FirstName" type="text"
+                               placeholder="First Name" required>
+                    </p>
+                    <p>
+                        <label for="MiddleInitial">Middle Initial:</label>
+                        <input id="MiddleInitial" Name="MiddleInitial" type="text"
+                               placeholder="Middle Initial" required>
+                    </p>
+                    <p>
+                        <label for="LastName">Last Name :</label>
+                        <input id="LastName" Name="LastName" type="text"
+                               placeholder="Last Name" required>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <input id="password" name="password" type="text"
+                               placeholder="password" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email"
+                               placeholder="For confirmation only">
+                    </p>
+
+                    <p>
+                        <label for="phoneNum"> Phone Number</label>
+                        <input id="phoneNum" name="phoneNum" type="tel"
+                               placeholder="(xxx) xxx-xxx">
+                    </p>
+
+                    
+
+                    <p>
+                        <label for="DOB"> Date Birth:</label>
+                        <input id="DOB" name="DOB" type="date"
+                               placeholder="MM/DD/YYYY">
+                    </p>
+
+                    <p>
+                        <label for="City">City</label>
+                        <input id="City" name="City" type="text"
+                               placeholder="City" required>
+                    </p>
+
+                    <p>
+                        <label for="SubCity">Sub City:</label>
+                        <input id="SubCity" name="SubCity" type="text"
+                               placeholder="Sub City" required>
+                    </p>
+                    <p>
+                        <label for="SubCity">Sub City:</label>
+                        <input id="SubCity" name="SubCity" type="text"
+                               placeholder="Sub City" required>
+                    </p>
+
+
+                </div>
+                <button class="btn" type="submit" id="Signbutton">Register</button>
+
+
+            </fieldset>
+
+        </div>
+
+    </form>
+
+
+}
