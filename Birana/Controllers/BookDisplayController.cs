@@ -32,5 +32,9 @@ namespace Birana.Controllers
             int isbn = bv.ISBN;
             return View(disp.BookDescription(isbn));
         }
+        public ActionResult DisplaySearchedBook(String str)
+        {
+            return View();
+        }
     }
 }
