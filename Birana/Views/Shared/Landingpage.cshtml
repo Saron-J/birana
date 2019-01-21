@@ -1,0 +1,184 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Biranna</title>
+
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="~/Content/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/owl.theme.default.css" />
+
+    <!-- Magnific Popup -->
+    <link type="text/css" rel="stylesheet" href="~/Content/magnific-popup.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="~/Content/style.css">
+    @RenderSection("Styles", false)
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="home">
+        <!-- Background Image -->
+        <div class="bg-img" style="background-image: url('~/Content/img/background1.jpg');">
+            <div class="overlay"></div>
+        </div>
+        <!-- /Background Image -->
+        <!-- Nav -->
+        <nav id="nav" class="navbar nav-transparent">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <!-- Logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img class="logo" src="~/Content/img/biranna.png" alt="logo">
+                            <img class="logo-alt" src="~/Content/img/biranna.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+                    <!-- Collapse nav button -->
+                    <div class="nav-collapse">
+                        <span></span>
+                    </div>
+                    <!-- /Collapse nav button -->
+                </div>
+
+                <!--  Main navigation  -->
+                <ul class="main-nav nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Prices</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+
+                </ul>
+                <!-- /Main navigation -->
+
+            </div>
+        </nav>
+        <!-- /Nav -->
+        <!-- home wrapper -->
+        <div class="home-wrapper">
+            <div class="container">
+                <div class="row">
+
+                    <!-- home content -->
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="home-content">
+                            <h1 class="white-text">We Are A Creative Agency</h1>
+                            <p class="white-text">
+                                Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere.
+                            </p>
+                            <button class="white-btn">Sign Up!</button>
+                            <button class="main-btn">Learn more</button>
+                        </div>
+                    </div>
+                    <!-- /home content -->
+
+                </div>
+            </div>
+        </div>
+        <!-- /home wrapper -->
+
+    </header>
+    <!-- /Header -->
+
+
+
+
+    @RenderBody()
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="sm-padding bg-dark">
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Row -->
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <!-- footer logo -->
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="~/Content/img/Biranna.png" alt="logo"></a>
+                    </div>
+                    <!-- /footer logo -->
+                    <!-- footer follow -->
+                    <ul class="footer-follow">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                    <!-- /footer follow -->
+                    <!-- footer copyright -->
+                    <div class="footer-copyright">
+                        <p>Copyright © 2017. All Rights Reserved. Biranna</p>
+                    </div>
+                    <!-- /footer copyright -->
+
+                </div>
+
+            </div>
+            <!-- /Row -->
+
+        </div>
+        <!-- /Container -->
+
+    </footer>
+    <!-- /Footer -->
+    <!-- Back to top -->
+    <div id="back-to-top"></div>
+    <!-- /Back to top -->
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- /Preloader -->
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="~/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="~/Scripts/main.js"></script>
+
+</body>
+
+</html>
+
