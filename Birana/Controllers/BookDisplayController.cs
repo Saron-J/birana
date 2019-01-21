@@ -33,8 +33,8 @@ namespace Birana.Controllers
             return View(disp.BookDescription(isbn));
         }
         public ActionResult DisplaySearchedBook(String str)
-        {
-            return View();
+        { 
+            return View(disp.ListSearchedBooks(str));
         }
     }
 }
