@@ -14,9 +14,11 @@ namespace Domain
         public String Status { get; set; }
         public DateTime deliveryDate { get; set; }
         public double shippingPrice { get; set; }
-        [ForeignKey("Email")]
-        public virtual Customer dEmail { get; set; }
-        [ForeignKey("warehouseName")]
+        public String DEmail { get; set; }
+        public String wName { get; set; }
+        [ForeignKey("DEmail")]
+        public virtual Customer Email { get; set; }
+        [ForeignKey("wName")]
         public virtual Warehouse warehouseName { get; set; }
     }
 

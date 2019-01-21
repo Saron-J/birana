@@ -12,7 +12,10 @@ namespace Domain
         [Key]
         public String ShoppingCartId { get; set; }
         public int TotalNumberOfBooks { get; set; }
-        [ForeignKey("Email")]
+        public string SEmail { get; set; }
+
+
+        [ForeignKey("SEmail")]
         public virtual Customer Email { get; set; }
     }
 }

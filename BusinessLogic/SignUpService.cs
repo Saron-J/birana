@@ -22,9 +22,7 @@ namespace BusinessLogic
         {
             var us = bDb.Customer.Where(c1 => c1.email == u.email).FirstOrDefault();
 
-            // var user = bDb.Users.Where(u1 => u1.UserName == u.employeeID).FirstOrDefault();
-
-            if (us == null)//&& user == null
+            if (us == null)
             {
                 Customer cust = new Customer();
                 cust = CustomerMapper.ToDomainModel(u);

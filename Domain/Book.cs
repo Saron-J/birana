@@ -11,13 +11,16 @@ namespace Domain
    public class Book
     {
         [Key]
-        public String ISBN { get; set; }
+        public int ISBN { get; set; }
         public String Title { get; set; }
         public String YearOfPublication { get; set; }
-        public System.IO.FileInfo BookFrontPage { get; set; }
+        public String BookFrontPage { get; set; }
         public double price { get; set; }
         public String BookDescription { get; set; }
         public String Category { get; set; }
+        public bool isRecent { get; set; }
+        public String PublisherName { get; set; }
+        public String AuthorName { get; set; }
 
         [ForeignKey("PublisherName")]
         public virtual Publisher BookPublisherName { get; set; }

@@ -13,7 +13,8 @@ namespace Domain
         public String AccountNumber { get; set; }
         public int Amount { get; set; }
         public double Discount { get; set; }
-        [ForeignKey("Email")]
-        public virtual Customer pEmail { get; set; }
+        public String pEmail { get; set; }
+        [ForeignKey("pEmail")]
+        public virtual Customer Email { get; set; }
     }
 }

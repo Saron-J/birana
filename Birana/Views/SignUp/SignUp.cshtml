@@ -1,17 +1,17 @@
 ﻿
 @{
     ViewBag.Title = "SignUp";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@section initalCSS{
+@*@section initalCSS{
     <link type="text/css" rel="stylesheet" href="~/Contents/css/Signup.css" />
-}
+}*@
 
 @section BodyPart{
 
 
-    <form action="@Url.Action("signup","login")" method="post">
+    <form action="@Url.Action("SignUp","SignUpController")" method="post">
         <div id="signupform">
             <fieldset class="fset">
                 <p> Sign-Up Here!!!</p><hr />
@@ -75,7 +75,9 @@
                                placeholder="Sub City" required>
                     </p>
 
-
+                    <div>
+                        @Html.ValidationSummary()
+                    </div>
                 </div>
                 <button class="btn" type="submit" id="Signbutton">Register</button>
 

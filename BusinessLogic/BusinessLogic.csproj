@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
-      <HintPath>..\..\..\..\..\Desktop\Tor Browser\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\..\..\Desktop\Tor Browser\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\..\..\..\..\Desktop\Tor Browser\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\..\..\Desktop\Tor Browser\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookReviewService.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="DisplayBooks.cs" />
+    <Compile Include="IBookReviewService.cs" />
+    <Compile Include="IDisplayBooks.cs" />
     <Compile Include="ILoginService.cs" />
     <Compile Include="ISignUpService.cs" />
     <Compile Include="LoginSevice.cs" />
@@ -54,7 +58,7 @@
     <Compile Include="SignUpService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Database\Database.csproj">
+    <ProjectReference Include="..\..\Database\Database.csproj">
       <Project>{ea88cf01-91e4-48f8-a8bc-a1321e1923cb}</Project>
       <Name>Database</Name>
     </ProjectReference>

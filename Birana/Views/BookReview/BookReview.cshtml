@@ -1,0 +1,87 @@
+﻿@using Domain
+@model List<BookReview>
+@{
+    ViewBag.Title = "BookReview";
+}
+
+<h2>BookReview</h2>
+
+@section BodyPart{
+@{
+    foreach (BookReview brview in Model)
+    {
+        <form id="Book" class="announcement">
+
+            <!-- Announcement content -->
+            <fieldset class="announcement-content">
+                <div class="announcement-header">
+                    Title:@brview.book.Title
+                    <nav id="myDate">Date: @brview.Customer.email</nav>
+                </div>
+                <div class="announcement-body">
+
+                    <img id="myImg" src=@brview.ReviewContent>
+
+                </div>
+                <div class="announcement-footer">
+                    <p>
+                        @brview.Rating
+                    </p>
+                </div>
+            </fieldset>
+
+        </form>}
+
+}
+
+    <div id="container2">
+        <form action="@Url.Action("BookReview", "BookReviewController")" method="post">
+            <fieldset class="Edit">
+                Edit form<hr />
+                <div class="fieldbox">
+                    <label for="title">Title:</label>
+                    <input id="name" Name="Title" type="text"
+                           placeholder="Title" required>
+                </div> <br />
+
+                <div class="fieldbox">
+                    <label for="picture">Picture:</label>
+                    <input name="Picture" type="file"
+                           placeholder="picture" required>
+                </div> <br />
+
+
+                <div class="fieldbox">
+                    <label for="picture">Visible Date:</label>
+                    <input id="dob" name="VisibleDate" type="date"
+                           placeholder="Visible Date" required>
+                </div> <br />
+
+
+                <div class="fieldbox">
+                    <label for="picture">Expire Date:</label>
+                    <input id="dob" name="ExpireDate" type="date"
+                           placeholder="Expire Date" required>
+                </div> <br />
+
+                <div class="fieldbox">
+
+                    <label for="ContentDescription">Description:</label>
+                    <input id="Description" name="ContentDescription" type="text"
+                           placeholder="Details for describing" required>
+                </div> <br />
+
+
+                <input class="btn" type="submit" id="Submit" value="submit" />
+
+
+            </fieldset>
+
+        </form>
+
+
+    </div>
+
+
+
+}

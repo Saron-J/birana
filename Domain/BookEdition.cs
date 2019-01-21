@@ -10,9 +10,11 @@ namespace Domain
 {
     public class BookEdition
     {
+        [Key]
+        public int BookISBN { get; set; }
         public int Book_Edition { get; set; }
-        [ForeignKey("ISBN")]
-        public virtual Book BookISBN { get; set; }
+        [ForeignKey("BookISBN")]
+        public virtual Book ISBN { get; set; }
         
     }
 }

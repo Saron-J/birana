@@ -1,0 +1,31 @@
+﻿@model Domain.Book
+@{
+    ViewBag.Title = "DiplayDescription";
+}
+
+<h2>DiplayDescription</h2>
+
+@section BodyPart{
+<div>
+    @{ }
+    <form id="BookDiscription" class="BookDiscription">
+        <div class="BookDiscription">
+            @Model.Title
+            <img id="myImg" src=@Model.BookFrontPage>
+            @Model.Author.AuthorFirstName
+            @Model.Author.AuthorMiddleInitial
+            @Model.Author.AuthorLastName
+            @Model.BookDescription
+            @Model.BookPublisherName
+            @Model.Category
+            @Model.ISBN
+            @Model.price
+            @Model.YearOfPublication
+            <p>Quanity</p>
+           <button class="cart" value="Cart" type="submit"/>
+        </div>
+    </form>
+
+</div>
+        
+}

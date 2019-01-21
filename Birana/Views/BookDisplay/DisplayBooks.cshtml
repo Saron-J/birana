@@ -1,0 +1,47 @@
+﻿@using ViewModel
+@using BusinessLogic
+@model List<BookViewModel>
+
+@{
+    ViewBag.Title = "DisplayBooks";
+}
+
+<h2>DisplayBooks</h2>
+
+@section BodyPart{
+
+@{ foreach(BookViewModel recent in Model){
+        <div>
+           @{ if (recent.isRecent==true)
+        {
+            <form id="RecentBooks" class="RecentBooks">
+            <div class="RecentBooks">
+             @recent.BookTitle
+            <img id="myImg" src=@recent.frontPageImg  >
+              @recent.Price
+             </div> 
+             </form>
+         }
+         </div>
+         <div>
+             else
+         {
+             <form id="RecentBooks" class="RecentBooks">
+             <div class="RecentBooks">
+              @recent.BookTitle
+            <img id="myImg" src=@recent.frontPageImg  >
+              @recent.Price
+            </div>
+                  <button class=" addReview" value="Add Book Review" type="submit"></button>
+            </form>
+         }
+            
+         </div>
+ }
+ }
+ }
+<a class="nav-link active show" id="review-tab" data-toggle="tab" href="~/Views/*" role="tab" aria-controls="review" aria-selected="true">Reviews</a>
+ }
+
+
+

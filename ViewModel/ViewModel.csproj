@@ -43,7 +43,8 @@
   <ItemGroup>
     <Compile Include="AdminViewModel.cs" />
     <Compile Include="BookUploadVM.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="BookViewModel.cs" />
+    <Compile Include="BookReviewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserViewModel_Login.cs" />
     <Compile Include="UserViewModel_Signup.cs" />

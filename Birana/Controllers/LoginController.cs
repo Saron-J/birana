@@ -14,13 +14,10 @@ namespace Birana.Controllers
     public class LoginController : Controller
     {
         ILoginService loginService;
-        BiranaDatabase db;
-        // needs database intialization
-        //that is to be passed to the constructor as
-        //a parameter
-        public LoginController( BiranaDatabase db)
+   
+        public LoginController( )
         {
-            db = this.db;
+            BiranaDatabase db = new BiranaDatabase();
             loginService = new LoginService(db);
         }
         // GET: Login

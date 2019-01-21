@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birana", "Birana\Birana.csproj", "{143EA566-EF88-4C8B-9D83-802835CF792C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birana.Tests", "Birana.Tests\Birana.Tests.csproj", "{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{97D6F81C-32F0-40E9-8265-8C967337EED1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{35C4BC0E-6430-438B-94E8-CA3AC3172421}"
@@ -15,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectMapper", "ObjectMapper\ObjectMapper.csproj", "{7900D310-26BA-47CB-A2B3-CB385C6D3CE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{EA88CF01-91E4-48F8-A8BC-A1321E1923CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "..\Database\Database.csproj", "{EA88CF01-91E4-48F8-A8BC-A1321E1923CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birana.Tests", "..\Visual Studio 2015\Projects\Birana\Birana.Tests\Birana.Tests.csproj", "{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		{143EA566-EF88-4C8B-9D83-802835CF792C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143EA566-EF88-4C8B-9D83-802835CF792C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143EA566-EF88-4C8B-9D83-802835CF792C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{97D6F81C-32F0-40E9-8265-8C967337EED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97D6F81C-32F0-40E9-8265-8C967337EED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97D6F81C-32F0-40E9-8265-8C967337EED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{EA88CF01-91E4-48F8-A8BC-A1321E1923CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA88CF01-91E4-48F8-A8BC-A1321E1923CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA88CF01-91E4-48F8-A8BC-A1321E1923CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C69BF7-CFB2-422E-A5C0-46C2E52DE6DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

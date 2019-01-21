@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ViewModel
+namespace ObjectMapper
 {
-    public class Class1
+    public class BookMapper
     {
     }
 }

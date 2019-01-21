@@ -14,7 +14,11 @@ namespace Domain
        public String BookReviewID { get; set; }
        public int Rating { get; set; }
        public String ReviewContent { get; set; }
-       [ForeignKey("Email")]
-       public virtual Customer Email { get; set; }
+       public String BEmail { get; set; }
+       [ForeignKey("BEmail")]
+       public virtual Customer Customer { get; set; }
+        public int BookISBN { get; set; }
+        [ForeignKey("BookISBN")]
+        public virtual Book book { get; set; }
     }
 }
