@@ -14,6 +14,7 @@ namespace ViewModel
         public String Description { get; set; }
         public Author Author { get; set; }
         public String BookFrontPageImg { get; set; }
+       
 
     }
 }

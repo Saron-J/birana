@@ -228,10 +228,15 @@
     <Content Include="Views\BookDisplay\DisplayBooks.cshtml" />
     <Content Include="Views\BookDisplay\DiplayDescription.cshtml" />
     <Content Include="Views\BookReview\BookReview.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Shared\AdminPage.cshtml" />
     <Content Include="Views\LandingPage\login.cshtml" />
     <Content Include="Views\LandingPage\Signup.cshtml" />
     <Content Include="Views\Shared\Landingpage.cshtml" />
+=======
+    <Content Include="Views\BookDisplay\DisplaySearchedBook.cshtml" />
+    <Content Include="Views\SignUp\SignupSummary.cshtml" />
+>>>>>>> 84ec9605a6c5b51f188d49fdbba33d5777862236
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -12,7 +12,7 @@ namespace BusinessLogic
     public interface IDisplayBooks
     {
         List<BookViewModel> ListBooks();
-        List<BookViewModel> ListSearchedBooks();
+        List<BookViewModel> ListSearchedBooks(String str);
         Book BookDescription(int ISBN);
     }
 }

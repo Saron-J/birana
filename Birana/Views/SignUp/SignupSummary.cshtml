@@ -1,0 +1,37 @@
+﻿@using Domain
+@using BusinessLogic
+@using ViewModel
+
+@{
+    ViewBag.Title = "SignupSummary";
+  
+}
+@{
+    Layout = null;
+}
+
+@{ViewModel.UserViewModel_Signup uvm = new UserViewModel_Signup(); }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width = 50%, height = 50%" />
+</head>
+<body>
+    <div class="view">
+        <h3>SignupSummary</h3>
+        <p>Here is the information you have entered. Please review and verify your entries.</p>
+        <ul>
+            <li>First Name:<t /> @uvm.FirstName</li>
+            <li>Miidle Initial:<t /> @uvm.MiddleInitial</li>
+            <li>Last Name:<t /> @uvm.LastName</li>
+            <li>Email:<t /> @uvm.email</li>
+            <li>Phone Number:<t /> @uvm.PhoneNum</li>
+            <li>Date Of Birth:<t /> @uvm.DOB</li>
+            <li>City:<t /> @uvm.City</li>
+            <li>Sub City:<t /> @uvm.SubCity</li>
+            <li>House Number:<t /> @uvm.houseNo</li>
+        </ul>
+    </div>
+</body>
+</html>
+
